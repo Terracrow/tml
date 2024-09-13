@@ -1,5 +1,5 @@
 {
-  "name": "tml",
+  "name": "tml-db",
   "version": "1.0.0",
   "description": "Simple-use database module",
   "main": "build/index.js",
@@ -17,7 +17,8 @@
   "keywords": [
     "database",
     "db",
-    "tml"
+    "tml",
+    "tmldb"
   ],
   "author": "Terracrow",
   "license": "MIT",
