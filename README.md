@@ -3,7 +3,7 @@
 > TML is a easy to use package for data manipulation
 
 - **Docs** [docs](https://terracrow.github.io/tml)
-- **NPM** [npm](https://npmjs.com)
+- **NPM** [npm](https://npmjs.com/tml-db)
 
 ### Installation
 ```sh
