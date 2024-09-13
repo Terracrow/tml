@@ -1,0 +1,11 @@
+{
+    "include": ["lib"],
+    "compilerOptions": {
+        "outDir": "dist",
+        "noImplicitAny": true,
+        "declaration": true,
+        "target": "ES6",
+        "moduleResolution": "NodeNext",
+        "module": "NodeNext"
+    }
+}
