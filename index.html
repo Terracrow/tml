@@ -1,12 +1,180 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<!doctype html>
+
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <title>TML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TML Docs</title>
+    <meta name="description" content="All the resources needed to use TML">
+    <meta name="author" content="Terracrow">
+
+    <link rel="stylesheet" href="style.css?">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+
+    <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+
+    <!-- Load the element definition -->
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
-  </head>
-  <body>
-    <zero-md src="index.md"></zero-md>
-  </body>
+
+</head>
+
+<body>
+
+    <div class="navbar clear nav-top">
+        <div class="row content">
+            <a href="#"><img class="logo" src="yaml.svg"></a>
+            <a class="right" style="text-decoration: underline;" href="#"><i class="fas fa-book"></i>&nbsp; Documentation</a>
+            <a class="right" href="https://github.com/Terracrow/tml" target="_blank"><img src="github.svg" style="height: 20px">&nbsp; Github</a>
+        </div>
+    </div>
+
+    <div class="container clear">
+        <div class="row wrapper">
+
+            <div class="sidepanel">
+
+                <a class="title" href="#">Introduction</a>
+
+                <a class="section" href="#">Supported Versions</a>
+                <a class="section" href="#">About this App</a>
+                <a class="section" href="#technology">More informations</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#gettingstarted">Getting Started</a>
+
+                <a class="section" href="#installingapp">Installing the App</a>
+                <a class="section" href="#set_up">Set-up</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#basicfeatures">Behind the code </a>
+
+                <a class="section" href="#set-f">set()</a>
+                <a class="section" href="#get-f">get()</a>
+                <a class="section" href="#delete-f">delete()</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#moreinfo">Issues</a>
+
+             <div class="space double"></div>
+
+            </div>
+
+            <div class="right-col">
+
+
+
+                <h1 >Introduction</h1>
+
+                <p>TML is an easy-to-use library for manipulating data in YAML format designed to look like other popular data manipulation modules, ideal for small applications like Discord bots.</p>
+
+                <h2>Supported Versions:</h2>
+
+                <p><b>1.0.7 and above</b> are the only working version of the package. Otherwise, if you add a version like 1.0.6, you will get an error and you will not be able to use the package.</p>
+
+                <h2>More informations</h2>
+
+                <p>This app is built with Typescript.<br>
+                Source code is available <a href="https://github.com/Terracrow/tml">here</a> </p>
+
+        <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+                <h1>Getting Started</h1>
+
+                <zero-md src="index.md"></zero-md>
+
+                <p id="installingapp"><b>Important:</b> Don't forget to use <b>1.0.7 and above</b>.</p>
+
+                </ol>
+
+
+                <h2 id="set_up">Set-up a database</h2>
+
+                <zero-md src="example.md"></zero-md>
+
+
+            <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+
+                <h1>Behind the code</h1>
+
+                <h2>Functions</h2>
+
+                <h3 id="set-f">set()</h2>
+
+                <zero-md src="set.md"></zero-md>
+
+                <ul>
+                  <li>
+                  <b>"key"</b> is the name of the file which will be generated, it must be a <b>string.</b>
+                  <br>
+                  <li>
+                  <b>"value"</b> is the data which will be stored in the generated file, it can be any type of data.
+                  </li>
+                   <li>
+                  <b>"options/path"</b> is the directory where the generated file will be moved.
+                  <br>
+                  <li>
+                    function ends by returning 'void'
+                  </li>
+              </ul>
+
+                <h3 id="get-f">get()</h3>
+
+                <zero-md src="get.md"></zero-md>
+
+                <ul>
+                  <li>
+                  <b>"key"</b> is the name of the target file.
+                  <br>
+                   <li>
+                  <b>"options/path"</b> is the directory where the target file exists.
+                  <br>
+                  <li>
+                    function ends by returning the data stored in the file.
+                  </li>
+              </ul>
+
+              <h3 id="delete-f">delete()</h3>
+
+              <zero-md src="rm.md"></zero-md>
+
+              <ul>
+                <li>
+                <b>"key"</b> is the name of the file which will be deleted.
+                <br>
+                 <li>
+                <b>"options/path"</b> is the directory where the target file exists.
+                <br>
+                <li>
+                  function ends by returning 'void'
+                </li>
+            </ul>
+
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+                <h1>Issues | Bugs</h1>
+
+                <p>If you discover any bug whether minor or major, please report it on <a href="https://github.com/Terracrow/tml/issues">'github issues'.</a></p>
+
+                <div class="doublespace"></div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
 </html>
