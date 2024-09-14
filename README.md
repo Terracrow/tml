@@ -41,7 +41,6 @@ const data = [
 // create a database connection
 const tml = new TMLDriver({
     limit: 100 // number of files allowed
-    customDir: 'tml' // set custom output path or put 'tml'
 });
 
 // set 'data[]' in 'access_perms.yml'

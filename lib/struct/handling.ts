@@ -5,7 +5,7 @@ import chalk from 'chalk';
  *
  */
 
-function handleError(body: string): Promise<Error> {
+function handleError(body: any): Promise<Error> {
 
     throw new Error(chalk.red(`[TML:ERROR] ${body}`));
 }

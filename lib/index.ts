@@ -7,4 +7,4 @@
 
 import TMLDriver from "./struct/database";
 
-export default TMLDriver;
+export { TMLDriver };

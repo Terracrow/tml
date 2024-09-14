@@ -3,7 +3,9 @@
  *
  */
 
+import { PathLike } from "fs";
+
 export default interface BuildOptions {
 
-    dir?: string
+    dir?: PathLike
 }

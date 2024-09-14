@@ -12,10 +12,8 @@ import TMLSetOptions from "./options/TMLSetOptions";
 
 export default class TMLDriver implements TMLDriverOptions {
 
-    public limit: number;
-    public customPath: string;
-
-    private strictPath: 'tml';
+    public limit?: number;
+    public path: string;
 
     /**
     * Create a new TML Driver for interact with the database
@@ -24,32 +22,30 @@ export default class TMLDriver implements TMLDriverOptions {
 
     constructor(options?: TMLDriverOptions) {
 
-        this.limit = options.limit;
-        this.customPath = options.customPath;
+        this.limit = options?.limit;
+        this.path = 'tml';
 
-        build({
-            dir: this.customPath
-        });
+        build({ dir: this.path });
     }
 
     get = (options: TMLGetOptions) => {
 
         return TMLGetKey(options.key, {
-            path: this.customPath ? this.customPath : this.strictPath
+            path: this.path
         })
     }
 
     set = (options: TMLSetOptions) => {
 
         return TMLSet(options.key, options.value, {
-            path: this.customPath ? this.customPath : this.strictPath
+            path: this.path
         });
     }
 
     delete = (options: TMLDeleteOptions) => {
 
         return TMLRm(options.key, {
-            path: this.customPath ? this.customPath : this.strictPath
+            path: this.path
         });
     }
 }

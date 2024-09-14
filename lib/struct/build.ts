@@ -4,16 +4,16 @@
  */
 
 import BuildOptions from './options/BuildOptions';
-import { existsSync, lstatSync, mkdirSync } from 'fs';
+import { existsSync, mkdirSync } from 'fs';
 import { handleError } from './handling';
 
 function build(options: BuildOptions): void {
 
-    if (existsSync(options.dir))
+    if (existsSync('tml'))
         return;
 
     try {
-        const file = mkdirSync(options.dir);
+        const file = mkdirSync('tml');
 
         return file;
 

@@ -5,6 +5,5 @@
 
 export default interface TMLDriverOptions {
 
-    limit: number;
-    customPath: string;
+    limit?: number;
 }
