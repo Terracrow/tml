@@ -17,60 +17,28 @@ yarn add tml-db
 git clone https://github.com/Terracrow/tml.git
 ```
 
-### Examples
-> Initialize and set a value in a key
-
 ```typescript
 // #test.js
 
 // import TMLDriver
 import { TMLDriver } from 'tml';
 
-// data to be stored
-const data = [
-    {
-        id: 1234,
-        allowed: true
-    },
-    {
-        id: 2341,
-        allowed: false
-    }
-];
-
-// create a database connection
 const tml = new TMLDriver({
     limit: 100 // number of files allowed
 });
 
-// set 'data[]' in 'access_perms.yml'
-tml.set({
-    key: 'access_perms',
-    value: data
-});
 
-
-/** Output (access_perms.yml)
- * ---
-- id: 1234
-  allowed: true
-- id: 2341
-  allowed: false
-*/
+tml.set();
+tml.get();
+tml.delete();
 ```
 
-> Get or delete data
-```typescript
-// #test.js
-
-// get the value of a key
-const usersPerms = db.get('access_perms');
-
-// delete data
-db.delete('access_perms');
-```
+> Documentation: [here](https://terracrow.github.io/tml)
 
 ---
-***This project is not finished and can present some bugs.***
 
->Made by Terracrow | 1.0.0
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/YBICTQu4FAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+***This project is not finished and can present some bugs.***
