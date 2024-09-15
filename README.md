@@ -37,7 +37,7 @@ tml.delete();
 
 ---
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/YBICTQu4FAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![youtube](https://zupimages.net/up/24/37/c8kg.jpg)](https://www.youtube.com/watch?v=YBICTQu4FAI)
 
 ---
 

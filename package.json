@@ -1,6 +1,6 @@
 {
   "name": "tml-db",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Simple-use database module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
